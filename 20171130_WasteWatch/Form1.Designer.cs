@@ -57,6 +57,9 @@
             this.lblLastOrder = new System.Windows.Forms.Label();
             this.lbOrdersTotal = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.lbLandkreis = new System.Windows.Forms.ListBox();
+            this.lbFraktion = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.gpControl.SuspendLayout();
             this.grpCustomerInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartF1)).BeginInit();
@@ -69,10 +72,10 @@
             // lbClients
             // 
             this.lbClients.FormattingEnabled = true;
-            this.lbClients.ItemHeight = 16;
-            this.lbClients.Location = new System.Drawing.Point(43, 36);
+            this.lbClients.Location = new System.Drawing.Point(33, 29);
+            this.lbClients.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbClients.Name = "lbClients";
-            this.lbClients.Size = new System.Drawing.Size(282, 452);
+            this.lbClients.Size = new System.Drawing.Size(212, 108);
             this.lbClients.TabIndex = 0;
             this.lbClients.SelectedIndexChanged += new System.EventHandler(this.lbClients_SelectedIndexChanged);
             this.lbClients.DoubleClick += new System.EventHandler(this.lbClients_DoubleClick);
@@ -81,27 +84,31 @@
             // 
             this.gpControl.Controls.Add(this.btnStream);
             this.gpControl.Controls.Add(this.btnClient);
-            this.gpControl.Location = new System.Drawing.Point(63, 523);
+            this.gpControl.Location = new System.Drawing.Point(47, 425);
+            this.gpControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gpControl.Name = "gpControl";
-            this.gpControl.Size = new System.Drawing.Size(243, 185);
+            this.gpControl.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpControl.Size = new System.Drawing.Size(182, 150);
             this.gpControl.TabIndex = 1;
             this.gpControl.TabStop = false;
             this.gpControl.Text = "Steuerelemente";
             // 
             // btnStream
             // 
-            this.btnStream.Location = new System.Drawing.Point(6, 71);
+            this.btnStream.Location = new System.Drawing.Point(4, 58);
+            this.btnStream.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStream.Name = "btnStream";
-            this.btnStream.Size = new System.Drawing.Size(211, 38);
+            this.btnStream.Size = new System.Drawing.Size(158, 31);
             this.btnStream.TabIndex = 1;
             this.btnStream.Text = "Neuer Stoffstrom";
             this.btnStream.UseVisualStyleBackColor = true;
             // 
             // btnClient
             // 
-            this.btnClient.Location = new System.Drawing.Point(6, 21);
+            this.btnClient.Location = new System.Drawing.Point(4, 17);
+            this.btnClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClient.Name = "btnClient";
-            this.btnClient.Size = new System.Drawing.Size(212, 34);
+            this.btnClient.Size = new System.Drawing.Size(159, 28);
             this.btnClient.TabIndex = 0;
             this.btnClient.Text = "Neuer Kunde";
             this.btnClient.UseVisualStyleBackColor = true;
@@ -110,11 +117,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 16);
+            this.label1.Location = new System.Drawing.Point(30, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Kunden";
+            this.label1.Text = "Bundesland";
             // 
             // timerUpdate
             // 
@@ -125,9 +133,11 @@
             this.grpCustomerInformation.Controls.Add(this.lblCustID);
             this.grpCustomerInformation.Controls.Add(this.lblCustContact);
             this.grpCustomerInformation.Controls.Add(this.lblCustName);
-            this.grpCustomerInformation.Location = new System.Drawing.Point(336, 523);
+            this.grpCustomerInformation.Location = new System.Drawing.Point(252, 425);
+            this.grpCustomerInformation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpCustomerInformation.Name = "grpCustomerInformation";
-            this.grpCustomerInformation.Size = new System.Drawing.Size(417, 185);
+            this.grpCustomerInformation.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpCustomerInformation.Size = new System.Drawing.Size(313, 150);
             this.grpCustomerInformation.TabIndex = 3;
             this.grpCustomerInformation.TabStop = false;
             this.grpCustomerInformation.Text = "Kundeninformationen";
@@ -135,27 +145,30 @@
             // lblCustID
             // 
             this.lblCustID.AutoSize = true;
-            this.lblCustID.Location = new System.Drawing.Point(13, 82);
+            this.lblCustID.Location = new System.Drawing.Point(10, 67);
+            this.lblCustID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustID.Name = "lblCustID";
-            this.lblCustID.Size = new System.Drawing.Size(116, 17);
+            this.lblCustID.Size = new System.Drawing.Size(87, 13);
             this.lblCustID.TabIndex = 2;
             this.lblCustID.Text = "Kundennummer: ";
             // 
             // lblCustContact
             // 
             this.lblCustContact.AutoSize = true;
-            this.lblCustContact.Location = new System.Drawing.Point(13, 51);
+            this.lblCustContact.Location = new System.Drawing.Point(10, 41);
+            this.lblCustContact.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustContact.Name = "lblCustContact";
-            this.lblCustContact.Size = new System.Drawing.Size(118, 17);
+            this.lblCustContact.Size = new System.Drawing.Size(88, 13);
             this.lblCustContact.TabIndex = 1;
             this.lblCustContact.Text = "Ansprechpartner:";
             // 
             // lblCustName
             // 
             this.lblCustName.AutoSize = true;
-            this.lblCustName.Location = new System.Drawing.Point(13, 25);
+            this.lblCustName.Location = new System.Drawing.Point(10, 20);
+            this.lblCustName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustName.Name = "lblCustName";
-            this.lblCustName.Size = new System.Drawing.Size(53, 17);
+            this.lblCustName.Size = new System.Drawing.Size(41, 13);
             this.lblCustName.TabIndex = 0;
             this.lblCustName.Text = "Name: ";
             // 
@@ -165,23 +178,26 @@
             this.chartF1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartF1.Legends.Add(legend1);
-            this.chartF1.Location = new System.Drawing.Point(352, 36);
+            this.chartF1.Location = new System.Drawing.Point(264, 29);
+            this.chartF1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartF1.Name = "chartF1";
             this.chartF1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartF1.Series.Add(series1);
-            this.chartF1.Size = new System.Drawing.Size(625, 452);
+            this.chartF1.Size = new System.Drawing.Size(469, 367);
             this.chartF1.TabIndex = 4;
             this.chartF1.Text = "chart1";
             // 
             // gbOrders
             // 
             this.gbOrders.Controls.Add(this.dgvOrders);
-            this.gbOrders.Location = new System.Drawing.Point(790, 523);
+            this.gbOrders.Location = new System.Drawing.Point(592, 425);
+            this.gbOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbOrders.Name = "gbOrders";
-            this.gbOrders.Size = new System.Drawing.Size(596, 185);
+            this.gbOrders.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbOrders.Size = new System.Drawing.Size(447, 150);
             this.gbOrders.TabIndex = 5;
             this.gbOrders.TabStop = false;
             this.gbOrders.Text = "Aufträge";
@@ -189,10 +205,11 @@
             // dgvOrders
             // 
             this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOrders.Location = new System.Drawing.Point(16, 29);
+            this.dgvOrders.Location = new System.Drawing.Point(12, 24);
+            this.dgvOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvOrders.Name = "dgvOrders";
             this.dgvOrders.RowTemplate.Height = 24;
-            this.dgvOrders.Size = new System.Drawing.Size(536, 150);
+            this.dgvOrders.Size = new System.Drawing.Size(402, 122);
             this.dgvOrders.TabIndex = 0;
             // 
             // gbSorts
@@ -202,9 +219,11 @@
             this.gbSorts.Controls.Add(this.cbAzV);
             this.gbSorts.Controls.Add(this.cbSperrmuell);
             this.gbSorts.Controls.Add(this.cbRestmuell);
-            this.gbSorts.Location = new System.Drawing.Point(1029, 36);
+            this.gbSorts.Location = new System.Drawing.Point(772, 29);
+            this.gbSorts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbSorts.Name = "gbSorts";
-            this.gbSorts.Size = new System.Drawing.Size(264, 175);
+            this.gbSorts.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbSorts.Size = new System.Drawing.Size(198, 142);
             this.gbSorts.TabIndex = 6;
             this.gbSorts.TabStop = false;
             this.gbSorts.Text = "Sorten";
@@ -213,9 +232,10 @@
             // 
             this.cbPaper.AutoSize = true;
             this.cbPaper.Enabled = false;
-            this.cbPaper.Location = new System.Drawing.Point(19, 143);
+            this.cbPaper.Location = new System.Drawing.Point(14, 116);
+            this.cbPaper.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbPaper.Name = "cbPaper";
-            this.cbPaper.Size = new System.Drawing.Size(71, 21);
+            this.cbPaper.Size = new System.Drawing.Size(56, 17);
             this.cbPaper.TabIndex = 4;
             this.cbPaper.Text = "Papier";
             this.cbPaper.UseVisualStyleBackColor = true;
@@ -225,9 +245,10 @@
             // 
             this.cbWood.AutoSize = true;
             this.cbWood.Enabled = false;
-            this.cbWood.Location = new System.Drawing.Point(19, 115);
+            this.cbWood.Location = new System.Drawing.Point(14, 93);
+            this.cbWood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbWood.Name = "cbWood";
-            this.cbWood.Size = new System.Drawing.Size(58, 21);
+            this.cbWood.Size = new System.Drawing.Size(47, 17);
             this.cbWood.TabIndex = 3;
             this.cbWood.Text = "Holz";
             this.cbWood.UseVisualStyleBackColor = true;
@@ -238,9 +259,10 @@
             // 
             this.cbAzV.AutoSize = true;
             this.cbAzV.Enabled = false;
-            this.cbAzV.Location = new System.Drawing.Point(19, 87);
+            this.cbAzV.Location = new System.Drawing.Point(14, 71);
+            this.cbAzV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbAzV.Name = "cbAzV";
-            this.cbAzV.Size = new System.Drawing.Size(55, 21);
+            this.cbAzV.Size = new System.Drawing.Size(45, 17);
             this.cbAzV.TabIndex = 2;
             this.cbAzV.Text = "AzV";
             this.cbAzV.UseVisualStyleBackColor = true;
@@ -251,9 +273,10 @@
             // 
             this.cbSperrmuell.AutoSize = true;
             this.cbSperrmuell.Enabled = false;
-            this.cbSperrmuell.Location = new System.Drawing.Point(19, 59);
+            this.cbSperrmuell.Location = new System.Drawing.Point(14, 48);
+            this.cbSperrmuell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbSperrmuell.Name = "cbSperrmuell";
-            this.cbSperrmuell.Size = new System.Drawing.Size(90, 21);
+            this.cbSperrmuell.Size = new System.Drawing.Size(69, 17);
             this.cbSperrmuell.TabIndex = 1;
             this.cbSperrmuell.Text = "Sperrmüll";
             this.cbSperrmuell.UseVisualStyleBackColor = true;
@@ -264,9 +287,10 @@
             // 
             this.cbRestmuell.AutoSize = true;
             this.cbRestmuell.Enabled = false;
-            this.cbRestmuell.Location = new System.Drawing.Point(19, 31);
+            this.cbRestmuell.Location = new System.Drawing.Point(14, 25);
+            this.cbRestmuell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbRestmuell.Name = "cbRestmuell";
-            this.cbRestmuell.Size = new System.Drawing.Size(84, 21);
+            this.cbRestmuell.Size = new System.Drawing.Size(66, 17);
             this.cbRestmuell.TabIndex = 0;
             this.cbRestmuell.Text = "Restmüll";
             this.cbRestmuell.UseVisualStyleBackColor = true;
@@ -277,9 +301,11 @@
             this.gpKeyfacts.Controls.Add(this.lbAverage);
             this.gpKeyfacts.Controls.Add(this.lblLastOrder);
             this.gpKeyfacts.Controls.Add(this.lbOrdersTotal);
-            this.gpKeyfacts.Location = new System.Drawing.Point(1029, 235);
+            this.gpKeyfacts.Location = new System.Drawing.Point(772, 191);
+            this.gpKeyfacts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gpKeyfacts.Name = "gpKeyfacts";
-            this.gpKeyfacts.Size = new System.Drawing.Size(264, 253);
+            this.gpKeyfacts.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpKeyfacts.Size = new System.Drawing.Size(198, 206);
             this.gpKeyfacts.TabIndex = 7;
             this.gpKeyfacts.TabStop = false;
             this.gpKeyfacts.Text = "Keyfacts";
@@ -287,44 +313,76 @@
             // lblNoOrders12Months
             // 
             this.lblNoOrders12Months.AutoSize = true;
-            this.lblNoOrders12Months.Location = new System.Drawing.Point(16, 143);
+            this.lblNoOrders12Months.Location = new System.Drawing.Point(12, 116);
+            this.lblNoOrders12Months.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNoOrders12Months.Name = "lblNoOrders12Months";
-            this.lblNoOrders12Months.Size = new System.Drawing.Size(148, 34);
+            this.lblNoOrders12Months.Size = new System.Drawing.Size(112, 26);
             this.lblNoOrders12Months.TabIndex = 3;
             this.lblNoOrders12Months.Text = "Anzahl Bestellung\r\n in letzten 12 Monate: ";
             // 
             // lbAverage
             // 
             this.lbAverage.AutoSize = true;
-            this.lbAverage.Location = new System.Drawing.Point(16, 105);
+            this.lbAverage.Location = new System.Drawing.Point(12, 85);
+            this.lbAverage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAverage.Name = "lbAverage";
-            this.lbAverage.Size = new System.Drawing.Size(145, 17);
+            this.lbAverage.Size = new System.Drawing.Size(112, 13);
             this.lbAverage.TabIndex = 2;
             this.lbAverage.Text = "Durchschnittsgewicht:";
             // 
             // lblLastOrder
             // 
             this.lblLastOrder.AutoSize = true;
-            this.lblLastOrder.Location = new System.Drawing.Point(16, 69);
+            this.lblLastOrder.Location = new System.Drawing.Point(12, 56);
+            this.lblLastOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLastOrder.Name = "lblLastOrder";
-            this.lblLastOrder.Size = new System.Drawing.Size(125, 17);
+            this.lblLastOrder.Size = new System.Drawing.Size(94, 13);
             this.lblLastOrder.TabIndex = 1;
             this.lblLastOrder.Text = "Letzte Bestellung: ";
             // 
             // lbOrdersTotal
             // 
             this.lbOrdersTotal.AutoSize = true;
-            this.lbOrdersTotal.Location = new System.Drawing.Point(16, 35);
+            this.lbOrdersTotal.Location = new System.Drawing.Point(12, 28);
+            this.lbOrdersTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbOrdersTotal.Name = "lbOrdersTotal";
-            this.lbOrdersTotal.Size = new System.Drawing.Size(167, 17);
+            this.lbOrdersTotal.Size = new System.Drawing.Size(125, 13);
             this.lbOrdersTotal.TabIndex = 0;
             this.lbOrdersTotal.Text = "Anzahl Aufträge gesamt: ";
             // 
+            // lbLandkreis
+            // 
+            this.lbLandkreis.FormattingEnabled = true;
+            this.lbLandkreis.Location = new System.Drawing.Point(33, 167);
+            this.lbLandkreis.Name = "lbLandkreis";
+            this.lbLandkreis.Size = new System.Drawing.Size(212, 95);
+            this.lbLandkreis.TabIndex = 8;
+            // 
+            // lbFraktion
+            // 
+            this.lbFraktion.FormattingEnabled = true;
+            this.lbFraktion.Location = new System.Drawing.Point(33, 292);
+            this.lbFraktion.Name = "lbFraktion";
+            this.lbFraktion.Size = new System.Drawing.Size(212, 82);
+            this.lbFraktion.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 239);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "label2";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1430, 735);
+            this.ClientSize = new System.Drawing.Size(1028, 597);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbFraktion);
+            this.Controls.Add(this.lbLandkreis);
             this.Controls.Add(this.gpKeyfacts);
             this.Controls.Add(this.gbSorts);
             this.Controls.Add(this.gbOrders);
@@ -333,6 +391,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gpControl);
             this.Controls.Add(this.lbClients);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "WasteWatch 2018 V1";
             this.gpControl.ResumeLayout(false);
@@ -377,6 +436,9 @@
         private System.Windows.Forms.Label lblNoOrders12Months;
         private System.Windows.Forms.Label lbAverage;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ListBox lbLandkreis;
+        private System.Windows.Forms.ListBox lbFraktion;
+        private System.Windows.Forms.Label label2;
     }
 }
 
