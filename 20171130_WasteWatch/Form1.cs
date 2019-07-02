@@ -418,6 +418,16 @@ namespace _20171130_WasteWatch
         {
             toolTip1.SetToolTip(cbPaper, "Gesamte Menge Papier (in Tonnen):  " + Convert.ToString(amoAmount_paper));
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

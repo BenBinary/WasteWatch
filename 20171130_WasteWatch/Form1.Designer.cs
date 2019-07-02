@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbClients = new System.Windows.Forms.ListBox();
             this.gpControl = new System.Windows.Forms.GroupBox();
             this.btnStream = new System.Windows.Forms.Button();
@@ -60,6 +60,7 @@
             this.lbLandkreis = new System.Windows.Forms.ListBox();
             this.lbFraktion = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.gpControl.SuspendLayout();
             this.grpCustomerInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartF1)).BeginInit();
@@ -174,18 +175,18 @@
             // 
             // chartF1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartF1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartF1.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.chartF1.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartF1.Legends.Add(legend5);
             this.chartF1.Location = new System.Drawing.Point(264, 29);
             this.chartF1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartF1.Name = "chartF1";
             this.chartF1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartF1.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chartF1.Series.Add(series5);
             this.chartF1.Size = new System.Drawing.Size(469, 367);
             this.chartF1.TabIndex = 4;
             this.chartF1.Text = "chart1";
@@ -363,23 +364,35 @@
             this.lbFraktion.FormattingEnabled = true;
             this.lbFraktion.Location = new System.Drawing.Point(33, 292);
             this.lbFraktion.Name = "lbFraktion";
-            this.lbFraktion.Size = new System.Drawing.Size(212, 82);
+            this.lbFraktion.Size = new System.Drawing.Size(212, 95);
             this.lbFraktion.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 239);
+            this.label2.Location = new System.Drawing.Point(30, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "label2";
+            this.label2.Text = "Landkreis";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(30, 276);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Fraktion";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 597);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbFraktion);
             this.Controls.Add(this.lbLandkreis);
@@ -439,6 +452,7 @@
         private System.Windows.Forms.ListBox lbLandkreis;
         private System.Windows.Forms.ListBox lbFraktion;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
