@@ -52,6 +52,7 @@ namespace _20171130_WasteWatch.Datenzugriff
             }
         }
 
+        List<Landkreis> Datenzugriff.Landkreis => throw new NotImplementedException();
 
         public List<Landkreis> Landkreis(int bundesland)
         {

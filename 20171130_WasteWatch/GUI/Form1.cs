@@ -61,7 +61,7 @@ namespace _20171130_WasteWatch
 
             foreach (Bundesland bundesland in bundeslaender)
             {
-                lbClients.Items.Add(bundesland.bezeichnung);
+                lbBundeslaender.Items.Add(bundesland.bezeichnung);
             }
             
         }
@@ -71,7 +71,7 @@ namespace _20171130_WasteWatch
         {
 
             //dgvCustomer.Rows.Clear();
-            lbClients.Items.Clear();
+            lbBundeslaender.Items.Clear();
             f1Kunden.Clear();
 
             f1Kunden = objRefresh.ReRefresh();
@@ -116,9 +116,15 @@ namespace _20171130_WasteWatch
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void lbClients_SelectedIndexChanged(object sender, EventArgs e)
+        private void lbBundeslaender_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+
+            Bundesland bundesland = (Bundesland) lbBundeslaender.SelectedItem;
+            int idBundesland = bundesland.id;
+
+
+                       
 
             
 
@@ -361,7 +367,7 @@ namespace _20171130_WasteWatch
         {
             newClient dc_newClient = new newClient();
 
-            dc_newClient.reqClient(globalConnectionString, Convert.ToString(lbClients.SelectedItem));
+            dc_newClient.reqClient(globalConnectionString, Convert.ToString(lbBundeslaender.SelectedItem));
 
             dc_newClient.Show();
         }

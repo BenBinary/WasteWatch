@@ -32,7 +32,7 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.lbClients = new System.Windows.Forms.ListBox();
+            this.lbBundeslaender = new System.Windows.Forms.ListBox();
             this.gpControl = new System.Windows.Forms.GroupBox();
             this.btnStream = new System.Windows.Forms.Button();
             this.btnClient = new System.Windows.Forms.Button();
@@ -70,16 +70,16 @@
             this.gpKeyfacts.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lbClients
+            // lbBundeslaender
             // 
-            this.lbClients.FormattingEnabled = true;
-            this.lbClients.Location = new System.Drawing.Point(33, 29);
-            this.lbClients.Margin = new System.Windows.Forms.Padding(2);
-            this.lbClients.Name = "lbClients";
-            this.lbClients.Size = new System.Drawing.Size(212, 108);
-            this.lbClients.TabIndex = 0;
-            this.lbClients.SelectedIndexChanged += new System.EventHandler(this.lbClients_SelectedIndexChanged);
-            this.lbClients.DoubleClick += new System.EventHandler(this.lbClients_DoubleClick);
+            this.lbBundeslaender.FormattingEnabled = true;
+            this.lbBundeslaender.Location = new System.Drawing.Point(33, 29);
+            this.lbBundeslaender.Margin = new System.Windows.Forms.Padding(2);
+            this.lbBundeslaender.Name = "lbBundeslaender";
+            this.lbBundeslaender.Size = new System.Drawing.Size(212, 108);
+            this.lbBundeslaender.TabIndex = 0;
+            //this.lbBundeslaender.SelectedIndexChanged += new System.EventHandler(this.lbClients_SelectedIndexChanged);
+            this.lbBundeslaender.DoubleClick += new System.EventHandler(this.lbClients_DoubleClick);
             // 
             // gpControl
             // 
@@ -401,7 +401,7 @@
             this.Controls.Add(this.grpCustomerInformation);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gpControl);
-            this.Controls.Add(this.lbClients);
+            this.Controls.Add(this.lbBundeslaender);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "WasteWatch Urban";
@@ -422,7 +422,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox lbClients;
+        private System.Windows.Forms.ListBox lbBundeslaender;
         private System.Windows.Forms.GroupBox gpControl;
         private System.Windows.Forms.Button btnStream;
         private System.Windows.Forms.Button btnClient;
