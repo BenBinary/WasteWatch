@@ -9,7 +9,9 @@ namespace _20171130_WasteWatch.Fachlogik
     class Landkreis
     {
         int id;
-
+        String name;
+        String kfz_kennzeichen;
+        int fk_bundesland;
 
     }
 }

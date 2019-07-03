@@ -9,9 +9,14 @@ namespace _20171130_WasteWatch.Fachlogik
     class Bundesland
     {
 
-        int id;
-        String kurzbezeichnung;
-        String bezeichnung;
+        public int id { get; set; }
+        public String kurzbezeichnung { get; set; }
+        public String bezeichnung { get; set; }
+
+        public Bundesland()
+        {
+
+        }
 
         public Bundesland(int pID, String pKurzbezeichnung) {
             this.kurzbezeichnung = pKurzbezeichnung;

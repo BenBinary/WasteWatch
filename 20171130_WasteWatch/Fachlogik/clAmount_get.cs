@@ -10,9 +10,7 @@ namespace _20171130_WasteWatch
     {
         public clAmount_get()
         { }
-
         
-
         public List<clAmount> getAmount(string parCusName, string parCon)
         {
             con.ConnectionString = parCon;
@@ -34,8 +32,7 @@ namespace _20171130_WasteWatch
 
                 con.Open();
 
-                 cmd.CommandText = "select * from Mengen where Kunde = " + Convert.ToString(custID) + ";";
-
+                cmd.CommandText = "select * from Mengen where Kunde = " + Convert.ToString(custID) + ";";
 
 
              reader_2 = cmd.ExecuteReader();
@@ -48,13 +45,10 @@ namespace _20171130_WasteWatch
                 ObjCLAmount.amoAmount = reader_2.GetInt32(2);
                 ObjCLAmount.amoArt = reader_2.GetString(1);
                 ObjCLAmount.amoDate = reader_2.GetDateTime(3);
-
                 liClAmount.Add(ObjCLAmount);
            
             }
-
-
-
+            
             con.Close();
 
             return liClAmount;

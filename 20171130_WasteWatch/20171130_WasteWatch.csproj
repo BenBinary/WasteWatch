@@ -46,9 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datenzugriff\Datenzugriff.cs" />
+    <Compile Include="Datenzugriff\db_access_connection.cs" />
+    <Compile Include="Fachlogik\Bundesland.cs" />
     <Compile Include="Fachlogik\clAmount.cs" />
     <Compile Include="Fachlogik\clAmount_get.cs" />
     <Compile Include="Fachlogik\clCust.cs" />
+    <Compile Include="Fachlogik\Landkreis.cs" />
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,8 +109,6 @@
   <ItemGroup>
     <None Include="Resources\WW_middleicon.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Datenzugriff\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

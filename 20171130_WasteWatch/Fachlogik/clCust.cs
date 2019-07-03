@@ -37,9 +37,7 @@ namespace _20171130_WasteWatch
             this.Hausnummer = reader.GetInt32(4);
             this.strasse = reader.GetString(3);
             this.contact = reader.GetString(2);
-
-            //Hallo
- 
+            
             con.Close();
 
             return this;

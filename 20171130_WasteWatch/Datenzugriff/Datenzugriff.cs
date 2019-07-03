@@ -11,6 +11,7 @@ namespace _20171130_WasteWatch.Datenzugriff
     interface Datenzugriff
     {
         List<Bundesland> Bundeslaender { get; }
+        List<Landkreis> Landkreis { get;  }
 
 
     }

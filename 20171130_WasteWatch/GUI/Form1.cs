@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using _20171130_WasteWatch.Datenzugriff;
+using _20171130_WasteWatch.Fachlogik;
 
 namespace _20171130_WasteWatch
 {
@@ -46,10 +48,17 @@ namespace _20171130_WasteWatch
             dgvOrders.Columns.Add("coMenge", "Menge in Tonnen");
             dgvOrders.Columns.Add("coDate", "Datum");
 
-            //dgvCustomer.Columns.Add("coCustName", "Kundenname");
-            //dgvCustomer.Columns.Add("coBranch", "Branchenschlüssel");
-            //dgvCustomer.Columns.Add("coSIze", "Unternehmensgröße");
 
+            updateBundeslaender();
+        }
+
+        public void updateBundeslaender()
+        {
+            db_access_connection connection = new db_access_connection();
+            List<Bundesland> bundeslaender = connection.Bundeslaender;
+            
+            foreach ()
+            //lbClients.Items.Add()
         }
     
 
@@ -77,8 +86,6 @@ namespace _20171130_WasteWatch
             wel.BringToFront();
         }
 
-    
-
         //Neuer Kunde anlegen
         private void btnClient_Click(object sender, EventArgs e)
         {
@@ -93,8 +100,6 @@ namespace _20171130_WasteWatch
            
 
         }
-
-
 
         private void timerUpdate_Tick(object sender, EventArgs e)
         {
