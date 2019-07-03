@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbClients = new System.Windows.Forms.ListBox();
             this.gpControl = new System.Windows.Forms.GroupBox();
             this.btnStream = new System.Windows.Forms.Button();
@@ -74,7 +74,7 @@
             // 
             this.lbClients.FormattingEnabled = true;
             this.lbClients.Location = new System.Drawing.Point(33, 29);
-            this.lbClients.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbClients.Margin = new System.Windows.Forms.Padding(2);
             this.lbClients.Name = "lbClients";
             this.lbClients.Size = new System.Drawing.Size(212, 108);
             this.lbClients.TabIndex = 0;
@@ -86,9 +86,9 @@
             this.gpControl.Controls.Add(this.btnStream);
             this.gpControl.Controls.Add(this.btnClient);
             this.gpControl.Location = new System.Drawing.Point(47, 425);
-            this.gpControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpControl.Margin = new System.Windows.Forms.Padding(2);
             this.gpControl.Name = "gpControl";
-            this.gpControl.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpControl.Padding = new System.Windows.Forms.Padding(2);
             this.gpControl.Size = new System.Drawing.Size(182, 150);
             this.gpControl.TabIndex = 1;
             this.gpControl.TabStop = false;
@@ -97,7 +97,7 @@
             // btnStream
             // 
             this.btnStream.Location = new System.Drawing.Point(4, 58);
-            this.btnStream.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStream.Margin = new System.Windows.Forms.Padding(2);
             this.btnStream.Name = "btnStream";
             this.btnStream.Size = new System.Drawing.Size(158, 31);
             this.btnStream.TabIndex = 1;
@@ -107,7 +107,7 @@
             // btnClient
             // 
             this.btnClient.Location = new System.Drawing.Point(4, 17);
-            this.btnClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClient.Margin = new System.Windows.Forms.Padding(2);
             this.btnClient.Name = "btnClient";
             this.btnClient.Size = new System.Drawing.Size(159, 28);
             this.btnClient.TabIndex = 0;
@@ -135,9 +135,9 @@
             this.grpCustomerInformation.Controls.Add(this.lblCustContact);
             this.grpCustomerInformation.Controls.Add(this.lblCustName);
             this.grpCustomerInformation.Location = new System.Drawing.Point(252, 425);
-            this.grpCustomerInformation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpCustomerInformation.Margin = new System.Windows.Forms.Padding(2);
             this.grpCustomerInformation.Name = "grpCustomerInformation";
-            this.grpCustomerInformation.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpCustomerInformation.Padding = new System.Windows.Forms.Padding(2);
             this.grpCustomerInformation.Size = new System.Drawing.Size(313, 150);
             this.grpCustomerInformation.TabIndex = 3;
             this.grpCustomerInformation.TabStop = false;
@@ -175,18 +175,18 @@
             // 
             // chartF1
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartF1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartF1.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chartF1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartF1.Legends.Add(legend1);
             this.chartF1.Location = new System.Drawing.Point(264, 29);
-            this.chartF1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartF1.Margin = new System.Windows.Forms.Padding(2);
             this.chartF1.Name = "chartF1";
             this.chartF1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartF1.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartF1.Series.Add(series1);
             this.chartF1.Size = new System.Drawing.Size(469, 367);
             this.chartF1.TabIndex = 4;
             this.chartF1.Text = "chart1";
@@ -195,9 +195,9 @@
             // 
             this.gbOrders.Controls.Add(this.dgvOrders);
             this.gbOrders.Location = new System.Drawing.Point(592, 425);
-            this.gbOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbOrders.Margin = new System.Windows.Forms.Padding(2);
             this.gbOrders.Name = "gbOrders";
-            this.gbOrders.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbOrders.Padding = new System.Windows.Forms.Padding(2);
             this.gbOrders.Size = new System.Drawing.Size(447, 150);
             this.gbOrders.TabIndex = 5;
             this.gbOrders.TabStop = false;
@@ -207,7 +207,7 @@
             // 
             this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrders.Location = new System.Drawing.Point(12, 24);
-            this.dgvOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvOrders.Margin = new System.Windows.Forms.Padding(2);
             this.dgvOrders.Name = "dgvOrders";
             this.dgvOrders.RowTemplate.Height = 24;
             this.dgvOrders.Size = new System.Drawing.Size(402, 122);
@@ -221,9 +221,9 @@
             this.gbSorts.Controls.Add(this.cbSperrmuell);
             this.gbSorts.Controls.Add(this.cbRestmuell);
             this.gbSorts.Location = new System.Drawing.Point(772, 29);
-            this.gbSorts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbSorts.Margin = new System.Windows.Forms.Padding(2);
             this.gbSorts.Name = "gbSorts";
-            this.gbSorts.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbSorts.Padding = new System.Windows.Forms.Padding(2);
             this.gbSorts.Size = new System.Drawing.Size(198, 142);
             this.gbSorts.TabIndex = 6;
             this.gbSorts.TabStop = false;
@@ -234,7 +234,7 @@
             this.cbPaper.AutoSize = true;
             this.cbPaper.Enabled = false;
             this.cbPaper.Location = new System.Drawing.Point(14, 116);
-            this.cbPaper.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPaper.Margin = new System.Windows.Forms.Padding(2);
             this.cbPaper.Name = "cbPaper";
             this.cbPaper.Size = new System.Drawing.Size(56, 17);
             this.cbPaper.TabIndex = 4;
@@ -247,7 +247,7 @@
             this.cbWood.AutoSize = true;
             this.cbWood.Enabled = false;
             this.cbWood.Location = new System.Drawing.Point(14, 93);
-            this.cbWood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbWood.Margin = new System.Windows.Forms.Padding(2);
             this.cbWood.Name = "cbWood";
             this.cbWood.Size = new System.Drawing.Size(47, 17);
             this.cbWood.TabIndex = 3;
@@ -261,7 +261,7 @@
             this.cbAzV.AutoSize = true;
             this.cbAzV.Enabled = false;
             this.cbAzV.Location = new System.Drawing.Point(14, 71);
-            this.cbAzV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAzV.Margin = new System.Windows.Forms.Padding(2);
             this.cbAzV.Name = "cbAzV";
             this.cbAzV.Size = new System.Drawing.Size(45, 17);
             this.cbAzV.TabIndex = 2;
@@ -275,7 +275,7 @@
             this.cbSperrmuell.AutoSize = true;
             this.cbSperrmuell.Enabled = false;
             this.cbSperrmuell.Location = new System.Drawing.Point(14, 48);
-            this.cbSperrmuell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSperrmuell.Margin = new System.Windows.Forms.Padding(2);
             this.cbSperrmuell.Name = "cbSperrmuell";
             this.cbSperrmuell.Size = new System.Drawing.Size(69, 17);
             this.cbSperrmuell.TabIndex = 1;
@@ -289,7 +289,7 @@
             this.cbRestmuell.AutoSize = true;
             this.cbRestmuell.Enabled = false;
             this.cbRestmuell.Location = new System.Drawing.Point(14, 25);
-            this.cbRestmuell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbRestmuell.Margin = new System.Windows.Forms.Padding(2);
             this.cbRestmuell.Name = "cbRestmuell";
             this.cbRestmuell.Size = new System.Drawing.Size(66, 17);
             this.cbRestmuell.TabIndex = 0;
@@ -303,9 +303,9 @@
             this.gpKeyfacts.Controls.Add(this.lblLastOrder);
             this.gpKeyfacts.Controls.Add(this.lbOrdersTotal);
             this.gpKeyfacts.Location = new System.Drawing.Point(772, 191);
-            this.gpKeyfacts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpKeyfacts.Margin = new System.Windows.Forms.Padding(2);
             this.gpKeyfacts.Name = "gpKeyfacts";
-            this.gpKeyfacts.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpKeyfacts.Padding = new System.Windows.Forms.Padding(2);
             this.gpKeyfacts.Size = new System.Drawing.Size(198, 206);
             this.gpKeyfacts.TabIndex = 7;
             this.gpKeyfacts.TabStop = false;
@@ -375,7 +375,6 @@
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Landkreis";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -385,7 +384,6 @@
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Fraktion";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
@@ -404,9 +402,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gpControl);
             this.Controls.Add(this.lbClients);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "WasteWatch 2018 V1";
+            this.Text = "WasteWatch Urban";
             this.gpControl.ResumeLayout(false);
             this.grpCustomerInformation.ResumeLayout(false);
             this.grpCustomerInformation.PerformLayout();

@@ -22,3 +22,15 @@ C:\Users\Benedikt\source\repos\20171130_WasteWatch\20171130_WasteWatch\obj\Debug
 C:\Users\Benedikt\source\repos\20171130_WasteWatch\20171130_WasteWatch\obj\Debug\20171130_WasteWatch.csproj.CoreCompileInputs.cache
 C:\Users\Benedikt\source\repos\20171130_WasteWatch\20171130_WasteWatch\obj\Debug\20171130_WasteWatch.exe
 C:\Users\Benedikt\source\repos\20171130_WasteWatch\20171130_WasteWatch\obj\Debug\20171130_WasteWatch.pdb
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\bin\Debug\20171130_WasteWatch.exe.config
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\bin\Debug\20171130_WasteWatch.exe
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\bin\Debug\20171130_WasteWatch.pdb
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\20171130_WasteWatch.csprojAssemblyReference.cache
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\_20171130_WasteWatch.Form1.resources
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\_20171130_WasteWatch.newClient.resources
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\_20171130_WasteWatch.Properties.Resources.resources
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\_20171130_WasteWatch.Welcome.resources
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\20171130_WasteWatch.csproj.GenerateResource.cache
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\20171130_WasteWatch.csproj.CoreCompileInputs.cache
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\20171130_WasteWatch.exe
+C:\Users\Benedikt\Documents\GitHub\WasteWatch\20171130_WasteWatch\obj\Debug\20171130_WasteWatch.pdb

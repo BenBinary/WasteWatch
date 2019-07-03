@@ -15,7 +15,7 @@ namespace _20171130_WasteWatch
     {
         // globale Variablendeklaration
         Refresh objRefresh = new Refresh(); 
-        string globalConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;" + "Data Source=C:\\temp\\WasteWatch2003.mdb";
+        string globalConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;" + "Data Source=C:\\temp\\WasteWatch2003_urban.mdb";
         List<string> f1Kunden = new List<string>();
         int series_count = 0;
        
@@ -419,15 +419,7 @@ namespace _20171130_WasteWatch
             toolTip1.SetToolTip(cbPaper, "Gesamte Menge Papier (in Tonnen):  " + Convert.ToString(amoAmount_paper));
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
     }
 
 
