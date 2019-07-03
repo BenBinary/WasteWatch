@@ -36,18 +36,15 @@ namespace _20171130_WasteWatch.Datenzugriff
 
                 while (reader.Read())
                 {
-                    
-                    for (int i = 0; i < reader.FieldCount; i++)
-                    {
-                        Bundesland bundesland = new Bundesland();
-
+                    Bundesland bundesland = new Bundesland();
+               
                         bundesland.id = reader.GetInt32(0);
                         bundesland.kurzbezeichnung = reader.GetString(1);
                         bundesland.bezeichnung = reader.GetString(2);
                         
-                        bundeslaender.Add(bundesland);
-                    }
-                    
+                        
+               
+                    bundeslaender.Add(bundesland);
                 }
                 con.Close();
                 return bundeslaender;
@@ -56,6 +53,27 @@ namespace _20171130_WasteWatch.Datenzugriff
         }
 
 
-        public List<Landkreis> Landkreis => throw new NotImplementedException();
+        public List<Landkreis> Landkreis(int bundesland)
+        {
+            List<Landkreis> landkreise = new List<Landkreis>();
+
+            con.Open();
+            cmd.CommandText = "Select * from Landkreis WHERE FK_Bundesland="+bundesland+";";
+            reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Landkreis landkreis = new Landkreis();
+
+                landkreis.id = reader.GetInt32(0);
+                landkreis.name = reader.GetString(1);
+                landkreis.kfz_kennzeichen = reader.GetString(2);
+                landkreis.fk_bundesland = reader.GetInt32(3);
+
+                landkreise.Add(landkreis);
+            }
+            con.Close();
+            return landkreise;
+        }
     }
 }

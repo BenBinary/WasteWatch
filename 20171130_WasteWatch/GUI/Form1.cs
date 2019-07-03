@@ -56,9 +56,14 @@ namespace _20171130_WasteWatch
         {
             db_access_connection connection = new db_access_connection();
             List<Bundesland> bundeslaender = connection.Bundeslaender;
+
+            Console.WriteLine("Anzahl der Elemente in Liste " + bundeslaender.Count);
+
+            foreach (Bundesland bundesland in bundeslaender)
+            {
+                lbClients.Items.Add(bundesland.bezeichnung);
+            }
             
-            foreach ()
-            //lbClients.Items.Add()
         }
     
 
@@ -75,7 +80,7 @@ namespace _20171130_WasteWatch
 
             for (int j = 0; j < items;  j++)
             {
-                lbClients.Items.Add(f1Kunden[j]);
+                //lbClients.Items.Add(f1Kunden[j]);
             }
 
 
@@ -106,8 +111,18 @@ namespace _20171130_WasteWatch
             this.F1Refresh();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lbClients_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+
+            
+
+            /*
             chartF1.Series.Clear();
             dgvOrders.Rows.Clear();
             clCust objCust = new clCust();
@@ -186,7 +201,7 @@ namespace _20171130_WasteWatch
 
             draw_Chart(f1_list_clAmountt);
 
-            
+            */
 
         }
 
