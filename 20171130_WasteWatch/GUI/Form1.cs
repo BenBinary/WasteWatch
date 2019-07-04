@@ -55,7 +55,7 @@ namespace _20171130_WasteWatch
         public void updateBundeslaender()
         {
             db_access_connection connection = new db_access_connection();
-            List<Bundesland> bundeslaender = connection.Bundeslaender;
+            //List<Bundesland> bundeslaender = connection.
 
             Console.WriteLine("Anzahl der Elemente in Liste " + bundeslaender.Count);
 
@@ -122,18 +122,23 @@ namespace _20171130_WasteWatch
 
             Bundesland bundesland = (Bundesland) lbBundeslaender.SelectedItem;
             int idBundesland = bundesland.id;
-
-
-                       
-
-            
-
-            /*
+                        
             chartF1.Series.Clear();
             dgvOrders.Rows.Clear();
             clCust objCust = new clCust();
             dt_last_order = new DateTime();
 
+            db_access_connection con = new db_access_connection();
+
+            List<Landkreis> landkreise = con.Landkreis(idBundesland);
+
+            foreach (Landkreis landkreis in landkreise)
+            {
+                lbLandkreis.Items.Add(landkreis.name.ToString());
+                //lbBundeslaender.Items.Add(bundesland.bezeichnung);
+            }
+
+            /*
             //Resten der Check-Boxen
             cbWood.Enabled = false;
             cbWood.Checked = false;

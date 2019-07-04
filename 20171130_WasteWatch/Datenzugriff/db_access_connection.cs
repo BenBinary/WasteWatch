@@ -8,7 +8,7 @@ using System.Data.OleDb;
 
 namespace _20171130_WasteWatch.Datenzugriff
 {
-    class db_access_connection : Datenzugriff
+    public class db_access_connection 
     {
 
 
@@ -25,10 +25,9 @@ namespace _20171130_WasteWatch.Datenzugriff
 
         }
 
-        public List<Bundesland> Bundeslaender
+        List<Bundesland> getBundeslaender()
         {
-            get
-            {
+
                 List<Bundesland> bundeslaender = new List<Bundesland>();
                 con.Open();
                 cmd.CommandText = "Select * from Bundesland;";
@@ -47,15 +46,36 @@ namespace _20171130_WasteWatch.Datenzugriff
                     bundeslaender.Add(bundesland);
                 }
                 con.Close();
-                return bundeslaender;
-                
-            }
+                return bundeslaender;   
         }
 
-        List<Landkreis> Datenzugriff.Landkreis => throw new NotImplementedException();
-
-        public List<Landkreis> Landkreis(int bundesland)
+       List<Landkreis> getAlleLandkreise()
         {
+                List<Landkreis> landkreise = new List<Landkreis>();
+
+                con.Open();
+                cmd.CommandText = "Select * from Landkreis;";
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Landkreis landkreis = new Landkreis();
+
+                    landkreis.id = reader.GetInt32(0);
+                    landkreis.name = reader.GetString(1);
+                    landkreis.kfz_kennzeichen = reader.GetString(2);
+                    landkreis.fk_bundesland = reader.GetInt32(3);
+
+                    landkreise.Add(landkreis);
+                }
+                con.Close();
+                return landkreise;
+            
+        }
+        
+        List<Landkreis> getLandkreis(int bundesland)
+        {
+
             List<Landkreis> landkreise = new List<Landkreis>();
 
             con.Open();
@@ -76,5 +96,8 @@ namespace _20171130_WasteWatch.Datenzugriff
             con.Close();
             return landkreise;
         }
+        
     }
+
+
 }
